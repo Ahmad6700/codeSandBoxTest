@@ -100,7 +100,7 @@ document.getElementById("root")
     return(
         <div style={{display: 'flex', justifyContent: 'Center', flexDirection: 'column', padding: '10px'}}>
             <button style={{width: '150px', marginBottom: '10px'}} onClick={()=>getSandBoxId()} >Get Components</button>
-            {wait && <p>Wating For Results ....</p>}
+            {wait && <p>Extracting and Building ....</p>}
             {frame &&
                 (frameIds.map((val, index)=>{
                     return <IFrame link={val} key={index} />
